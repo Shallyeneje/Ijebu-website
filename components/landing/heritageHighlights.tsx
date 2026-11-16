@@ -50,7 +50,7 @@ export default function HeritageHighlights() {
           {highlights.map((item) => (
             <article
               key={item.title}
-              className="overflow-hidden bg-[#163F33] p-2"
+              className="rounded-2xl overflow-hidden bg-[#163F33] p-2"
             >
               <div className="relative aspect-[1.15/1] overflow-hidden">
                 <Image
@@ -58,7 +58,7 @@ export default function HeritageHighlights() {
                   alt={item.title}
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  className="object-cover transition-transform duration-500 hover:scale-105"
+                  className="object-cover transition-transform duration-500 hover:scale-105 rounded-2xl"
                 />
               </div>
 

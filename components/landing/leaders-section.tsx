@@ -12,7 +12,7 @@ const people = [
   },
   {
     name: "Iyalode Ebudola Funmilayo Orekoya",
-    role: "Planning Committee Ijebu Summer day",
+    role: "Planning Committee Ijebu Summer Day",
     image: "/images/leader2.jpg",
   },
   {
@@ -21,23 +21,23 @@ const people = [
     image: "/images/leader3.png",
   },
   {
-    name: "Add Name 4",
-    role: "Add Role",
+    name: "Bolanle Arike Ladejobi",
+    role: "Gen Secretary",
     image: "/images/leader4.jpg",
   },
   {
-    name: "Add Name 5",
-    role: "Add Role",
+    name: "Omotayo Mosuro",
+    role: "Youth Director",
     image: "/images/leader5.jpg",
   },
   {
-    name: "Add Name 6",
-    role: "Add Role",
+    name: "Motayo Balogun",
+    role: "Treasurer",
     image: "/images/leader6.jpg",
   },
   {
-    name: "Add Name 7",
-    role: "Add Role",
+    name: "Aderonke Adunni Adebayo",
+    role: "Vice President",
     image: "/images/leader7.jpg",
   },
   {
@@ -51,8 +51,8 @@ const people = [
     image: "/images/leader9.png",
   },
   {
-    name: "Add Name 10",
-    role: "Add Role",
+    name: "Havana Adegunwa",
+    role: "Sponsorship & Partnership Director",
     image: "/images/leader10.png",
     portfolio: undefined,
   },
@@ -195,14 +195,14 @@ export default function LeadersSection() {
           >
             {people.map((person) => {
               const card = (
-                <article className="h-full overflow-hidden bg-[#163F33] p-2">
-                  <div className="relative aspect-[0.88/1] overflow-hidden bg-[#E9E9E9]">
+                <article className="h-full overflow-hidden bg-[#163F33] p-2 rounded-3xl">
+                  <div className="relative rounded-3xl aspect-[0.88/1] overflow-hidden bg-[#E9E9E9]">
                     <Image
                       src={person.image}
                       alt={person.name}
                       fill
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      className="object-cover transition-transform duration-500 hover:scale-105"
+                      className="object-cover transition-transform duration-500 hover:scale-105 rounded-2xl"
                     />
                   </div>
 

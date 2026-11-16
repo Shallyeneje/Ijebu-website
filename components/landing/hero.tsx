@@ -16,8 +16,8 @@ const heroImages = [
     alt: "Ijebu cultural gathering",
   },
   {
-    src: "/images/hero-3.jpg",
-    alt: "Members of the Ijebu community",
+    src: "/images/gathering.jpg",
+    alt: "Ijebu cultural procession",
   },
 ];
 

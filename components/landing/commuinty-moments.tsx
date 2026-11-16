@@ -11,7 +11,7 @@ const moments = [
   {
     period: "January – March",
     category: "Community & Connection",
-    image: "/images/moment-1.jpg",
+    image: "/images/gallery/gallery-18.jpg",
     activities: [
       "New Year gathering",
       "Membership drive",
@@ -21,7 +21,7 @@ const moments = [
   {
     period: "April – June",
     category: "Growth & Empowerment",
-    image: "/images/moment-2.jpg",
+    image: "/images/gallery/gallery-07.jpg",
     activities: [
       "Youth empowerment",
       "Education programmes",
@@ -31,7 +31,7 @@ const moments = [
   {
     period: "July – September",
     category: "Culture & Heritage",
-    image: "/images/moment-3.jpg",
+    image: "/images/gallery/gallery-03.png",
     activities: [
       "Cultural celebration",
       "Ijebu heritage programme",
@@ -40,7 +40,7 @@ const moments = [
   {
     period: "October – December",
     category: "Community Impact",
-    image: "/images/moment-4.jpg",
+    image: "/images/gallery/gallery-13.jpg",
     activities: [
       "Charity outreach",
       "Family celebration",
@@ -96,16 +96,16 @@ export default function CommunityMoments() {
             {moments.map((moment) => (
               <article
                 key={moment.period}
-                className="bg-[#FAFAFA] p-3"
+                className="bg-[#FAFAFA] p-3 rounded-2xl"
               >
                 <Link href="/gallery" className="group block">
-                  <div className="relative aspect-[1.6/1] w-full overflow-hidden bg-[#D9D9D9]">
+                  <div className="rounded-2xl relative aspect-[1.6/1] w-full overflow-hidden bg-[#D9D9D9]">
                     <Image
                       src={moment.image}
                       alt={moment.category}
                       fill
                       sizes="(max-width: 768px) 190px, 25vw"
-                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      className="object-cover transition-transform duration-500 group-hover:scale-105 rounded-2xl"
                     />
                   </div>
                 </Link>

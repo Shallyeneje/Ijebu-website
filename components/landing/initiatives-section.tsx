@@ -52,7 +52,7 @@ export default function InitiativesSection() {
           {initiatives.map((item) => (
             <article
               key={item.title}
-              className="overflow-hidden bg-[#163F33] p-2"
+              className="overflow-hidden bg-[#163F33] p-2 rounded-2xl"
             >
               <div className="relative aspect-[1.2/1] overflow-hidden">
                 <Image
@@ -60,7 +60,7 @@ export default function InitiativesSection() {
                   alt={item.title}
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  className="object-cover transition-transform duration-500 hover:scale-105"
+                  className="object-cover transition-transform duration-500 hover:scale-105 rounded-2xl"
                 />
               </div>
 

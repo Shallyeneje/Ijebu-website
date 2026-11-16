@@ -178,6 +178,92 @@ const galleryImages: GalleryImage[] = [
     category: "Events",
     aspectRatio: "4 / 3",
   },
+   {
+    id: 31,
+    image: "/images/gallery/gallery-31 (1).jpeg",
+    title: "Traditional gathering",
+    category: "Places",
+    aspectRatio: "4 / 3",
+  },
+  {
+    id: 32,
+    image: "/images/gallery/gallery-31 (2).jpeg",
+    title: "Traditional gathering",
+    category: "Places",
+    aspectRatio: "4 / 3",
+  },
+  {
+    id: 33,
+    image: "/images/gallery/gallery-31 (3).jpeg",
+    title: "Traditional gathering",
+    category: "Places",
+    aspectRatio: "4 / 3",
+  },
+  {
+    id: 34,
+    image: "/images/gallery/gallery-31 (4).jpeg",
+    title: "Traditional gathering",
+    category: "Places",
+    aspectRatio: "4 / 3",
+  },
+  {
+    id: 35,
+    image: "/images/gallery/gallery-31 (5).jpeg",
+    title: "Traditional gathering",
+    category: "Places",
+    aspectRatio: "4 / 3",
+  },
+  {
+    id: 36,
+    image: "/images/gallery/gallery-31 (6).jpeg",
+    title: "Traditional gathering",
+    category: "Places",
+    aspectRatio: "4 / 3",
+  },
+  {
+    id: 37,
+    image: "/images/gallery/gallery-31 (7).jpeg",
+    title: "Traditional gathering",
+    category: "Places",
+    aspectRatio: "4 / 3",
+  },
+  {
+    id: 38,
+    image: "/images/gallery/gallery-31 (8).jpeg",
+    title: "Traditional gathering",
+    category: "Places",
+    aspectRatio: "4 / 3",
+  },
+  {
+    id: 39,
+    image: "/images/gallery/gallery-31 (9).jpeg",
+    title: "Traditional gathering",
+    category: "Places",
+    aspectRatio: "4 / 3",
+  },
+  {
+    id: 40,
+    image: "/images/gallery/gallery-31 (10).jpeg",
+    title: "Traditional gathering",
+    category: "Places",
+    aspectRatio: "4 / 3",
+  },
+  {
+    id: 41,
+    image: "/images/gallery/gallery-31 (11).jpeg",
+    title: "Traditional gathering",
+    category: "Places",
+    aspectRatio: "4 / 3",
+  },
+  {
+    id: 42,
+    image: "/images/gallery/gallery-31 (13).jpeg",
+    title: "Traditional gathering",
+    category: "Places",
+    aspectRatio: "4 / 3",
+  },
+  
+  
 ];
 
 // ==========================================
@@ -289,7 +375,7 @@ export default function GalleryPage() {
         {/* GALLERY GRID */}
         <div className="mt-6 columns-2 gap-2.5 sm:mt-8 sm:columns-3 sm:gap-3 lg:gap-4">
           {filteredImages.map((item) => (
-            <GalleryCard key={item.id} item={item} />
+            <GalleryCard key={item.image} item={item} />
           ))}
         </div>
 
