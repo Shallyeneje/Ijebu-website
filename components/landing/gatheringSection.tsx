@@ -24,7 +24,7 @@ export default function GatheringSection() {
           Regberegbe..
         </p>
 
-        <div className="relative mt-6 aspect-16/8 w-full overflow-hidden">
+        <div className="relative mt-6 aspect-16/8 w-full overflow-hidden rounded-2xl">
           <Image
             src="/images/gathering.jpg"
             alt="Ijebu descendants celebrating together at a cultural gathering"

@@ -72,7 +72,7 @@ export default function Hero() {
 
         {/* RIGHT IMAGE SLIDESHOW */}
         <div className="order-1 md:order-2">
-          <div className="relative aspect-[1.05/1] w-full overflow-hidden border-[3px] border-[#087B5B] sm:aspect-[1.15/1] md:aspect-[0.95/1] lg:aspect-[1.05/1]">
+          <div className="relative aspect-[1.05/1] w-full overflow-hidden rounded-2xl border-[3px] border-[#087B5B] sm:aspect-[1.15/1] md:aspect-[0.95/1] lg:aspect-[1.05/1]">
 
             {heroImages.map((image, index) => (
               <Image

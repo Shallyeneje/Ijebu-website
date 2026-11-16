@@ -87,7 +87,7 @@ export default function Footer() {
         </div>
 
         {/* FOOTER IMAGE */}
-        <div className="relative aspect-16/7] w-full overflow-hidden sm:aspect-16/6">
+        <div className="relative aspect-16/7] rounded-2xl w-full overflow-hidden sm:aspect-16/6">
           <Image
             src="/images/footer.png"
             alt="Ijebu cultural gathering"

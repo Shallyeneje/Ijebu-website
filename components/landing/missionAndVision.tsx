@@ -38,7 +38,7 @@ export default function MissionVision() {
 
         {/* MISSION */}
         <div className="mt-12 grid items-center gap-6 md:grid-cols-2 md:gap-12">
-          <div className="relative aspect-[1.35/1] overflow-hidden">
+          <div className="relative aspect-[1.35/1] overflow-hidden rounded-2xl">
             <Image
               src="/images/mission11.png"
               alt="Ijebu descendants celebrating their culture"
@@ -97,7 +97,7 @@ export default function MissionVision() {
             </p>
           </div>
 
-          <div className="relative order-1 aspect-[1.35/1] overflow-hidden md:order-2">
+          <div className="relative order-1 aspect-[1.35/1] overflow-hidden md:order-2 rounded-2xl">
             <Image
               src="/images/mission2.png"
               alt="Ijebu traditional leaders at a cultural gathering"

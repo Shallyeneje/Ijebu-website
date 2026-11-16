@@ -151,7 +151,7 @@ export default function CommunityMoments() {
 
           {/* FEATURE IMAGE */}
           <Link href="/events" className="group block">
-            <div className="relative aspect-16/8.5 w-full overflow-hidden bg-[#D9D9D9] sm:aspect-16/8 md:aspect-16/7.5">
+            <div className="relative aspect-16/8.5 w-full overflow-hidden bg-[#D9D9D9] sm:aspect-16/8 md:aspect-16/7.5 rounded-2xl">
               <Image
                 src="/images/gathering.jpg"
                 alt="Ijebu cultural procession and community celebration"

@@ -301,7 +301,7 @@ function GalleryTab({
 
 function GalleryCard({ item }: { item: GalleryImage }) {
   return (
-    <article className="mb-2.5 break-inside-avoid overflow-hidden bg-[#EAE7DF] sm:mb-3">
+    <article className="mb-2.5 rounded-2xl break-inside-avoid overflow-hidden bg-[#EAE7DF] sm:mb-3">
       <div
         className="relative w-full overflow-hidden"
         style={{ aspectRatio: item.aspectRatio }}
@@ -311,7 +311,7 @@ function GalleryCard({ item }: { item: GalleryImage }) {
           alt={item.title}
           fill
           sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 400px"
-          className="object-cover transition-transform duration-700 hover:scale-105"
+          className="rounded-xl object-cover transition-transform duration-700 hover:scale-105"
         />
       </div>
     </article>

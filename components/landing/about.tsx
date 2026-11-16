@@ -23,7 +23,7 @@ export default function AboutSection() {
           </h2>
 
           {/* Heritage image */}
-          <div className="relative mt-5 aspect-[1.2/1] w-full overflow-hidden">
+          <div className="relative rounded-2xl mt-5 aspect-[1.2/1] w-full overflow-hidden">
             <Image
               src="/images/aboutImage.png"
               alt="A historic Ijebu heritage landmark"
