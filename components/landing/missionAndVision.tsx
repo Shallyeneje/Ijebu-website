@@ -26,7 +26,9 @@ export default function MissionVision() {
           </p>
 
           <Link
-            href="/about"
+            href="https://chat.whatsapp.com/Lqvu67mq9QA21cQZ6MUczj"
+            target="_blank"
+            rel="noopener noreferrer"
             className="mt-5 inline-flex items-center gap-2 bg-[#FFB900] px-2 py-1 text-[14px] font-medium text-[#163F33] transition-colors hover:bg-white"
           >
             Join Our Community

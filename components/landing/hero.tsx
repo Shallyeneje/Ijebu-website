@@ -1,4 +1,3 @@
-
 "use client";
 
 import Image from "next/image";
@@ -35,7 +34,6 @@ export default function Hero() {
   return (
     <section className="w-full bg-[#163F33] py-10 md:pb-12 lg:py-10">
       <div className="mx-auto grid max-w-360 grid-cols-1 items-center gap-8 px-5 py-10 sm:px-8 md:min-h-117.5 md:grid-cols-2 md:gap-8 md:px-10 md:py-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-12 lg:px-10 lg:py-4">
-
         {/* LEFT CONTENT */}
         <div className="order-2 flex flex-col items-start md:order-1">
           <h1 className="text-[38px] leading-[1.15] tracking-[-1.2px] sm:text-5xl lg:text-[52px]">
@@ -59,11 +57,12 @@ export default function Hero() {
           </p>
 
           <Link
-            href="/membership"
+            href="https://chat.whatsapp.com/Lqvu67mq9QA21cQZ6MUczj"
+            target="_blank"
+            rel="noopener noreferrer"
             className="mt-5 inline-flex items-center gap-3 bg-[#FFB910] px-3 py-2 text-[14px] font-medium text-[#173D32] transition-all duration-300 hover:bg-white"
           >
             Become a member
-
             <span className="flex h-5 w-5 items-center justify-center rounded-full bg-white">
               <ArrowUpRight size={13} />
             </span>
@@ -73,7 +72,6 @@ export default function Hero() {
         {/* RIGHT IMAGE SLIDESHOW */}
         <div className="order-1 md:order-2">
           <div className="relative aspect-[1.05/1] w-full overflow-hidden rounded-2xl border-[3px] border-[#087B5B] sm:aspect-[1.15/1] md:aspect-[0.95/1] lg:aspect-[1.05/1]">
-
             {heroImages.map((image, index) => (
               <Image
                 key={image.src}
@@ -83,9 +81,7 @@ export default function Hero() {
                 priority={index === 0}
                 sizes="(max-width: 767px) 100vw, (max-width: 1024px) 50vw, 45vw"
                 className={`object-cover transition-opacity duration-1000 ease-in-out ${
-                  activeImage === index
-                    ? "z-10 opacity-100"
-                    : "z-0 opacity-0"
+                  activeImage === index ? "z-10 opacity-100" : "z-0 opacity-0"
                 }`}
               />
             ))}
@@ -109,7 +105,6 @@ export default function Hero() {
             </div>
           </div>
         </div>
-
       </div>
     </section>
   );

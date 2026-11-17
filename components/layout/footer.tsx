@@ -15,10 +15,10 @@ const footerLinks = [
   {
     title: "Get Involved",
     links: [
-      { label: "Become a Member", href: "/membership" },
+      { label: "Become a Member", href:"https://chat.whatsapp.com/Lqvu67mq9QA21cQZ6MUczj", target: "_blank", rel: "noopener noreferrer" },
       { label: "Events & Activities", href: "/events" },
       { label: "Community Engagement", href: "/community" },
-      { label: "Contact Us", href: "/contact" },
+      // { label: "Contact Us", href: "/contact" },
     ],
   },
 ];
@@ -52,7 +52,9 @@ export default function Footer() {
           </div>
 
           <Link
-            href="/membership"
+            href="https://chat.whatsapp.com/Lqvu67mq9QA21cQZ6MUczj"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex w-fit items-center gap-2 bg-[#FFB900] px-3 py-2 text-[12px] font-medium text-[#163F33] transition-colors hover:bg-white"
           >
             Join our community
