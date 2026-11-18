@@ -1,11 +1,6 @@
-
 import Image from "next/image";
 import Link from "next/link";
-import {
-  ArrowUpRight,
-  CalendarDays,
-  MapPin,
-} from "lucide-react";
+import { ArrowUpRight, CalendarDays, MapPin } from "lucide-react";
 
 const moments = [
   {
@@ -32,20 +27,13 @@ const moments = [
     period: "July – September",
     category: "Culture & Heritage",
     image: "/images/gallery/gallery-03.png",
-    activities: [
-      "Cultural celebration",
-      "Ijebu heritage programme",
-    ],
+    activities: ["Cultural celebration", "Ijebu Day Festival","Ijebu heritage programme"],
   },
   {
     period: "October – December",
     category: "Community Impact",
     image: "/images/gallery/gallery-13.jpg",
-    activities: [
-      "Charity outreach",
-      "Family celebration",
-      "Annual review",
-    ],
+    activities: ["Charity outreach", "Family celebration", "Annual review"],
   },
 ];
 
@@ -53,7 +41,6 @@ export default function CommunityMoments() {
   return (
     <section className="bg-[#F5F3EA] px-5 py-12 sm:px-8 md:py-16">
       <div className="mx-auto max-w-300">
-
         {/* SECTION INTRO */}
         <div className="border-y border-[#173B30]">
           <span className="text-[10px] uppercase tracking-[0.2em] text-black">
@@ -71,8 +58,8 @@ export default function CommunityMoments() {
         </div>
 
         <p className="mt-3 max-w-150 text-sm leading-6 text-black sm:text-base">
-          Our gatherings are at the heart of our community. From celebrating
-          our rich Ijebu heritage to creating meaningful friendships, sharing
+          Our gatherings are at the heart of our community. From celebrating our
+          rich Ijebu heritage to creating meaningful friendships, sharing
           opportunities and supporting one another, every gathering brings us
           closer.
         </p>
@@ -134,7 +121,6 @@ export default function CommunityMoments() {
 
         {/* UPCOMING EVENTS FEATURE */}
         <div className="mt-12 md:mt-16">
-
           {/* FEATURE HEADER */}
           <div className="mb-3 flex items-center justify-between">
             <span className="text-[12px] font-medium uppercase tracking-[0.15em] text-[#222222]">
@@ -169,28 +155,27 @@ export default function CommunityMoments() {
             </h3>
 
             <p className="mt-2 text-[12px] leading-5 text-[#555555] sm:text-sm">
-              Event announcements and registration details will appear here
-              when confirmed.
+              Event announcements and registration details will appear here when
+              confirmed.
             </p>
 
             {/* DATE AND VENUE */}
             <div className="mt-3 gap-2 text-[12px] text-[#444444]  sm:gap-6">
-
+              <div className="flex items-center gap-2 mb-2">
+                <span className="font-bold text-lg">Ijebu Day Festival, UK & Ireland</span>
+              </div>
               <div className="flex items-center gap-2">
                 <CalendarDays size={12} strokeWidth={1.7} />
-                <span>Date: To be announced</span>
+                <span>Date: August 28, 2027</span>
               </div>
 
               <div className="flex items-center gap-2 mt-2">
                 <MapPin size={12} strokeWidth={1.7} />
                 <span>Venue: To be announced</span>
               </div>
-
             </div>
           </div>
-
         </div>
-
       </div>
     </section>
   );

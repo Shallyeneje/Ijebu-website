@@ -47,7 +47,7 @@ export default function AboutSection() {
             <p>
               Ijebu Descendants UK & Ireland is a community built around a
               shared heritage, identity and sense of belonging. We bring
-              together people of Ijebu descent across the United Kingdom and
+              together people of Ijebu descendant across the United Kingdom and
               Ireland, creating a place where our roots remain strong, our
               relationships grow and our culture continues to thrive.
             </p>

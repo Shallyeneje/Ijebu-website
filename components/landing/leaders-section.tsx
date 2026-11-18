@@ -11,8 +11,8 @@ const people = [
     image: "/images/leader1.jpg",
   },
   {
-    name: "Iyalode Ebudola Funmilayo Orekoya",
-    role: "Planning Committee Ijebu Summer Day",
+    name: "Olatunbosun Oreagba",
+    role: "Welfare and Social Impact Director",
     image: "/images/leader2.jpg",
   },
   {
@@ -41,13 +41,13 @@ const people = [
     image: "/images/leader7.jpg",
   },
   {
-    name: "Add Name 8",
-    role: "Add Role",
+    name: "Timilehin Onafowokan",
+    role: "Director of Events & Culture",
     image: "/images/leader8.png",
   },
   {
-    name: "Add Name 9",
-    role: "Add Role",
+    name: "Timi Adegunwa",
+    role: "Communication Director",
     image: "/images/leader9.png",
   },
   {
