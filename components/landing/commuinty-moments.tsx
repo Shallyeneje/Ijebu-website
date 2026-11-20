@@ -137,13 +137,13 @@ export default function CommunityMoments() {
 
           {/* FEATURE IMAGE */}
           <Link href="/events" className="group block">
-            <div className="relative aspect-16/8.5 w-full overflow-hidden bg-[#D9D9D9] sm:aspect-16/8 md:aspect-16/7.5 rounded-2xl">
+            <div className="relative mx-auto aspect-video  w-full max-w-4xl overflow-hidden rounded-2xl bg-[#D9D9D9]">
               <Image
-                src="/images/gathering.jpg"
+                src="/images/IJB2.jpg (3).jpeg"
                 alt="Ijebu cultural procession and community celebration"
                 fill
-                sizes="(max-width: 768px) 100vw, 1200px"
-                className="object-cover transition-transform duration-700 group-hover:scale-[1.02]"
+                sizes="(max-width: 768px) calc(100vw - 2.5rem), 896px"
+                className="object-contain transition-transform duration-700 group-hover:scale-[1.02]"
               />
             </div>
           </Link>

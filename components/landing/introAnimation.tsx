@@ -3,6 +3,7 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 
 const images = [
   "/images/hero/hero-1.png",
@@ -18,15 +19,12 @@ export default function IntroAnimation({
   children,
 }: IntroAnimationProps) {
   const [activeImage, setActiveImage] = useState(0);
-  const [isExiting, setIsExiting] = useState(false);
   const [isComplete, setIsComplete] = useState(false);
 
-  useEffect(() => {
-    const prefersReducedMotion = window.matchMedia(
-      "(prefers-reduced-motion: reduce)"
-    ).matches;
+  const shouldReduceMotion = useReducedMotion();
 
-    if (prefersReducedMotion) {
+  useEffect(() => {
+    if (shouldReduceMotion) {
       setIsComplete(true);
       return;
     }
@@ -39,10 +37,6 @@ export default function IntroAnimation({
       setActiveImage(2);
     }, 5000);
 
-    const third = setTimeout(() => {
-      setIsExiting(true);
-    }, 7500);
-
     const finish = setTimeout(() => {
       setIsComplete(true);
     }, 7800);
@@ -50,43 +44,50 @@ export default function IntroAnimation({
     return () => {
       clearTimeout(first);
       clearTimeout(second);
-      clearTimeout(third);
       clearTimeout(finish);
     };
-  }, []);
+  }, [shouldReduceMotion]);
 
   return (
     <>
       {children}
 
-      {!isComplete && (
-        <div
-          className={`fixed inset-0 z-9999 overflow-hidden bg-black transition-opacity duration-700 ease-in-out ${
-            isExiting ? "opacity-0" : "opacity-100"
-          }`}
-          aria-hidden="true"
-        >
-          {images.map((image, index) => (
-            <div
-              key={image}
-              className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
-                activeImage === index
-                  ? "opacity-100"
-                  : "opacity-0"
-              }`}
-            >
-              <Image
-                src={image}
-                alt=""
-                fill
-                priority
-                sizes="100vw"
-                className="object-cover object-top"
-              />
-            </div>
-          ))}
-        </div>
-      )}
+      <AnimatePresence>
+        {!isComplete && (
+          <motion.div
+            key="intro-overlay"
+            initial={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.8, ease: "easeInOut" }}
+            className="fixed inset-0 z-9999 overflow-hidden bg-black"
+            aria-hidden="true"
+          >
+            <AnimatePresence mode="sync">
+              <motion.div
+                key={images[activeImage]}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.7, ease: "easeInOut" }}
+                className="absolute inset-0"
+              >
+                <Image
+                  src={images[activeImage]}
+                  alt=""
+                  fill
+                  priority
+                  sizes="100vw"
+                  className="
+                    object-cover
+                    object-[center_20%]
+                    sm:object-top
+                  "
+                />
+              </motion.div>
+            </AnimatePresence>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </>
   );
 }
